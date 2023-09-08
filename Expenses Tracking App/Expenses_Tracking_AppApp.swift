@@ -2,7 +2,7 @@
 //  Expenses_Tracking_AppApp.swift
 //  Expenses Tracking App
 //
-//  Created by Mihir Ben on 2023-09-02.
+//  Created by Ashen Pathirana on 2023-09-02.
 //
 
 import SwiftUI
@@ -11,7 +11,8 @@ import SwiftUI
 struct Expenses_Tracking_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            RegistrationView(viewModel: RegistrationViewModel())
         }
     }
 }

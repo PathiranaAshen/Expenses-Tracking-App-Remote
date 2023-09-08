@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Expenses Tracking App
 //
-//  Created by Mihir Ben on 2023-09-02.
+//  Created by Ashen Pathirana on 2023-09-02.
 //
 
 import SwiftUI
@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            /*Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Hello, world!")*/
         }
         .padding()
     }
