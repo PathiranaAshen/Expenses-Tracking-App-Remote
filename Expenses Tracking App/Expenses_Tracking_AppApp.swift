@@ -13,6 +13,7 @@ struct Expenses_Tracking_AppApp: App {
         WindowGroup {
             //ContentView()
             LoginView(viewModel: LoginViewModel())
+            //ExpenseTrackingView(viewModel:  ExpenseTrackingViewModel())
         }
     }
 }
