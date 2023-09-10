@@ -29,6 +29,7 @@ struct RegistrationView: View {
                 Button("Register") {
                     viewModel.registerUser()
                 }
+                .frame(maxWidth: 100)
                 .padding()
                 .foregroundColor(.white)
                 .background(Color.blue)

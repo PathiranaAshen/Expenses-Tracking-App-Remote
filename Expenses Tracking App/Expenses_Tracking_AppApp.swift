@@ -12,7 +12,7 @@ struct Expenses_Tracking_AppApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            RegistrationView(viewModel: RegistrationViewModel())
+            LoginView(viewModel: LoginViewModel())
         }
     }
 }
