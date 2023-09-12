@@ -29,6 +29,7 @@ struct LoginView: View {
                     }
                     .frame(maxWidth: 100) // Ensure equal button widths
                     .padding()
+                    .font(.headline)
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .cornerRadius(10)
@@ -38,6 +39,7 @@ struct LoginView: View {
                     }
                     .frame(maxWidth: 100) // Ensure equal button widths
                     .padding()
+                    .font(.headline)
                     .foregroundColor(.white)
                     .background(Color.green)
                     .cornerRadius(10)

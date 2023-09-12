@@ -41,6 +41,7 @@ struct ExpenseTrackingView: View {
                     }
                     .frame(maxWidth: 100) // Ensure equal button widths
                     .padding()
+                    .font(.headline)
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .cornerRadius(10)
@@ -50,6 +51,7 @@ struct ExpenseTrackingView: View {
                     }
                     .frame(maxWidth: 100) // Ensure equal button widths
                     .padding()
+                    .font(.headline)
                     .foregroundColor(.white)
                     .background(Color.red)
                     .cornerRadius(10)

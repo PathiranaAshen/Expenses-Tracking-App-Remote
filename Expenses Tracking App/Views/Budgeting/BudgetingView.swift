@@ -25,6 +25,7 @@ struct BudgetingView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .padding()
+                .font(.headline)
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(10)
