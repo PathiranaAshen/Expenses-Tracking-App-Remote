@@ -27,5 +27,6 @@ class ExpenseTrackingViewModel: ObservableObject {
         category = ""
         amount = ""
         description = ""
-        location = ""    }
+        location = ""
+    }
 }
