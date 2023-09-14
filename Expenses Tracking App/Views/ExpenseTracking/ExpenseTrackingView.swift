@@ -39,7 +39,8 @@ struct ExpenseTrackingView: View {
                     Button("Add Expense") {
                         viewModel.addExpense()
                     }
-                    .frame(maxWidth: 100) // Ensure equal button widths
+                    .frame(maxWidth: 120) // Ensure equal button widths
+                    .frame(maxHeight: 20)
                     .padding()
                     .font(.headline)
                     .foregroundColor(.white)

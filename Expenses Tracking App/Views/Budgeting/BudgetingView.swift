@@ -23,7 +23,7 @@ struct BudgetingView: View {
                 Button("Add Category") {
                     viewModel.addCategory()
                 }
-                .frame(maxWidth: .infinity)
+                .frame(maxWidth: 100)
                 .padding()
                 .font(.headline)
                 .foregroundColor(.white)
