@@ -15,6 +15,7 @@ struct Expenses_Tracking_AppApp: App {
             //LoginView(viewModel: LoginViewModel())
             //ExpenseTrackingView(viewModel:  ExpenseTrackingViewModel())
             //BudgetingView(viewModel: BudgetingViewModel())
+            //ReportsAndAnalyticsView(viewModel:  ReportsAndAnalyticsViewModel())
         }
     }
 }
