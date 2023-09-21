@@ -13,16 +13,28 @@ struct BudgetCategoryRow: View {
 
     var body: some View {
         VStack {
+            Text("Category")
+                .font(.headline)
+                .padding(.top)
+            
             TextField("Category", text: $category.name)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
 
-            HStack {
+            VStack {
+                Text("Budget Amount")
+                    .font(.headline)
+                    .padding(.top)
+                
                 TextField("Budget Amount", value: $category.budgetAmount, formatter: NumberFormatter())
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.decimalPad)
                     .padding()
 
+                Text("Period")
+                    .font(.headline)
+                    .padding(.top)
+                
                 Picker("Period", selection: $category.period) {
                     Text("Weekly").tag(BudgetPeriod.weekly)
                     Text("Monthly").tag(BudgetPeriod.monthly)
