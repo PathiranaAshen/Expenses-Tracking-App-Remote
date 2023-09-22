@@ -16,7 +16,12 @@ class ExpenseTrackingViewModel: ObservableObject {
     @Published var description = ""
     @Published var location = ""
     
+    @Published var showAlert = false
+    @Published var alertMessage = ""
+    
     func addExpense() {
+        showAlert = true
+        alertMessage = "Expense Added..."
         // Clearing the input fields after adding expenses
         clearFields()
     }

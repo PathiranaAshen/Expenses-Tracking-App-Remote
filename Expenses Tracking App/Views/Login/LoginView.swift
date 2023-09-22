@@ -15,6 +15,8 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
+                
                 TextField("Email", text: $viewModel.email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
@@ -24,7 +26,7 @@ struct LoginView: View {
                     .padding()
                 
                 VStack(spacing: 30) { // Used a VStack for equal button widths
-                    Button("Login") {
+                    Button("Log in") {
                         viewModel.loginUser()
                     }
                     .frame(maxWidth: 100) // Ensure equal button widths
@@ -33,6 +35,11 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .cornerRadius(10)
+                    
+                    Text("Don't have an account, Sign Up below")
+                        .font(.subheadline)
+                        .padding()
+                        
                     
                     Button("Register") {
                         isRegistrationViewPresented.toggle()

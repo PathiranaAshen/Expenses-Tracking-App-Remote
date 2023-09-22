@@ -11,6 +11,9 @@ import Combine
 class BudgetingViewModel: ObservableObject {
     @Published var categories: [Category] = []
     
+    @Published var showAlert = false
+    @Published var alertMessage = ""
+    
     init() {
         // Initialize categories with default values or retrieve from a data source
         categories = [
@@ -23,5 +26,11 @@ class BudgetingViewModel: ObservableObject {
     
     func addCategory() {
         // Implement this function's code to save categories to a data source
+        showAlert = true
+        alertMessage = "Category Added..."
+    }
+    
+    func clearFields() {
+        
     }
 }

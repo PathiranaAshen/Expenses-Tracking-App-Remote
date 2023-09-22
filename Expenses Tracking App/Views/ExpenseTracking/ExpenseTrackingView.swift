@@ -66,6 +66,11 @@ struct ExpenseTrackingView: View {
                 startPoint: .top,
                 endPoint: .bottom
             ))
+            
+            .alert(isPresented: $viewModel.showAlert) {
+                Alert(title: Text(""), message: Text(viewModel.alertMessage), dismissButton: .default(Text("OK")))
+            }
+            
         }
     }
 }

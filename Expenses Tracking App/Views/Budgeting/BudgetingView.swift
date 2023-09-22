@@ -19,23 +19,39 @@ struct BudgetingView: View {
                         BudgetCategoryRow(category: category)
                     }
                 }
-
+            HStack {
                 Button("Add Category") {
                     viewModel.addCategory()
                 }
-                .frame(maxWidth: 100)
+                .frame(maxWidth: 150)
                 .padding()
                 .font(.headline)
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(10)
+                
+                Button("Clear") {
+                    viewModel.clearFields()
+                }
+                .frame(maxWidth: 100) // Ensure equal button widths
+                .padding()
+                .font(.headline)
+                .foregroundColor(.white)
+                .background(Color.red)
+                .cornerRadius(10)
             }
+        }
             .navigationBarTitle("Budgeting")
             .background(LinearGradient(
                 gradient: Gradient(colors: [Color(UIColor(red: 173/255, green: 216/255, blue: 230/255, alpha: 1.0)), .white]),
                 startPoint: .top,
                 endPoint: .bottom
             ))
+            
+            .alert(isPresented: $viewModel.showAlert) {
+                Alert(title: Text(""), message: Text(viewModel.alertMessage), dismissButton: .default(Text("OK")))
+            }
+            
         }
     }
 }

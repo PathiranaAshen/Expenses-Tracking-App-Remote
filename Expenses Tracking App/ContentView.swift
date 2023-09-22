@@ -23,7 +23,7 @@ struct ContentView: View {
                     .foregroundColor(.blue)
                     .padding()
                 
-                Text("Expenses Tracking App")
+                Text("Expense Tracking App")
                     .font(.title)
                     .fontWeight(.bold)
                     .padding()

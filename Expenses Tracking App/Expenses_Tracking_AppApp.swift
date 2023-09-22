@@ -11,9 +11,9 @@ import SwiftUI
 struct Expenses_Tracking_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
             //LoginView(viewModel: LoginViewModel())
-            //DashboardView(viewModel: DashboardViewModel())
+            DashboardView(viewModel: DashboardViewModel())
             //ExpenseTrackingView(viewModel:  ExpenseTrackingViewModel())
             //BudgetingView(viewModel: BudgetingViewModel())
             //ReportsAndAnalyticsView(viewModel:  ReportsAndAnalyticsViewModel())
