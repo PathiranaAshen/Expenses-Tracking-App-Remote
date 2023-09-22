@@ -25,6 +25,11 @@ struct SidebarView: View {
                 }
 
             // Add buttons for navigation
+            NavigationLink(destination: ProfileView(viewModel: ProfileViewModel(user: UserProfile(id: "1", name: "Ashen Pathirana", email: "ashen@example.com")), isSidebarOpen: $isSidebarOpen), label: {
+                Text("Profile")
+            })
+            .padding()
+            
             NavigationLink(destination: ExpenseTrackingView(viewModel: ExpenseTrackingViewModel())) {
                 Text("Expense Tracking")
             }

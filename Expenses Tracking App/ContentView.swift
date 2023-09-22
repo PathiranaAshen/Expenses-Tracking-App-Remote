@@ -13,15 +13,31 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Image(systemName: "globe")
+                /*Image(systemName: "globe")
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
-                    .padding()
+                    .padding()*/
+                
+                /*Image("image1")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300, height: 250)
+                    .padding(.bottom, 20)
+                    .blendMode(.color)*/
+                
+                Image("appicon2")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 70, height: 70)
+                    .clipShape(Circle())
+                    .padding(.bottom, 20)
+                    .blendMode(.color)
                 
                 Text("Take control of your finances...")
-                    .font(.headline)
+                    .font(.title3)
                     .foregroundColor(.blue)
                     .padding()
+                    .italic()
                 
                 Text("Expense Tracking App")
                     .font(.title)
@@ -33,10 +49,11 @@ struct ContentView: View {
                 }
                 .frame(maxWidth: 100)
                 .padding()
-                .font(.headline)
+                .font(.title3)
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(10)
+                .fontWeight(.heavy)
             }
             .frame(maxWidth: .infinity)
             .frame(maxHeight: .infinity)
