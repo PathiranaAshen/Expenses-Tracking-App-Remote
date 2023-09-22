@@ -46,6 +46,7 @@ struct ExpenseTrackingView: View {
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .cornerRadius(10)
+                    .fontWeight(.heavy)
                     
                     Button("Clear") {
                         viewModel.clearFields()
@@ -56,6 +57,7 @@ struct ExpenseTrackingView: View {
                     .foregroundColor(.white)
                     .background(Color.red)
                     .cornerRadius(10)
+                    .fontWeight(.heavy)
                 }
                 
                 Spacer()

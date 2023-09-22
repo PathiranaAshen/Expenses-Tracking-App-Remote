@@ -16,13 +16,21 @@ struct SidebarView: View {
     var body: some View {
         VStack(alignment: .leading) {
             
-            Image(systemName: "globe")
+            /*Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
                 .padding()
                 .alignmentGuide(.trailing) { _ in
                     return -10
-                }
+                }*/
+            
+            Image("appicon4")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40, height: 40)
+                .clipShape(Circle())
+                .padding(.bottom, 20)
+                .blendMode(.color)
 
             // Add buttons for navigation
             NavigationLink(destination: ProfileView(viewModel: ProfileViewModel(user: UserProfile(id: "1", name: "Ashen Pathirana", email: "ashen@example.com")), isSidebarOpen: $isSidebarOpen), label: {

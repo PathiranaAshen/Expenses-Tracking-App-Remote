@@ -14,6 +14,16 @@ struct RegistrationView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
+                
+                Image("appicon4")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+                    .padding(.bottom, 20)
+                    .blendMode(.color)
+                
                 TextField("Email", text: $viewModel.email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
@@ -35,6 +45,7 @@ struct RegistrationView: View {
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(10)
+                .fontWeight(.heavy)
                 
                 Spacer()
             }

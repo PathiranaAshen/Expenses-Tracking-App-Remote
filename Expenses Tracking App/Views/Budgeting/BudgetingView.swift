@@ -29,6 +29,7 @@ struct BudgetingView: View {
                 .foregroundColor(.white)
                 .background(Color.blue)
                 .cornerRadius(10)
+                .fontWeight(.heavy)
                 
                 Button("Clear") {
                     viewModel.clearFields()
@@ -39,6 +40,7 @@ struct BudgetingView: View {
                 .foregroundColor(.white)
                 .background(Color.red)
                 .cornerRadius(10)
+                .fontWeight(.heavy)
             }
         }
             .navigationBarTitle("Budgeting")

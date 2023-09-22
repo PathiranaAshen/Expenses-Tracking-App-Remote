@@ -43,6 +43,11 @@ struct BudgetCategoryRow: View {
                 .padding()
             }
         }
+        /*.background(LinearGradient(
+            gradient: Gradient(colors: [Color(UIColor(red: 173/255, green: 216/255, blue: 230/255, alpha: 1.0)), .white]),
+            startPoint: .top,
+            endPoint: .bottom
+        ))*/
         .background(Color.white)
         .cornerRadius(10)
         .padding()

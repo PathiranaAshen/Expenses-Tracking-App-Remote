@@ -17,6 +17,14 @@ struct LoginView: View {
             VStack {
                 Spacer()
                 
+                Image("appicon4")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+                    .padding(.bottom, 20)
+                    .blendMode(.color)
+                
                 TextField("Email", text: $viewModel.email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
@@ -35,6 +43,7 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .cornerRadius(10)
+                    .fontWeight(.heavy)
                     
                     Text("Don't have an account, Sign Up below")
                         .font(.subheadline)
@@ -50,6 +59,7 @@ struct LoginView: View {
                     .foregroundColor(.white)
                     .background(Color.green)
                     .cornerRadius(10)
+                    .fontWeight(.heavy)
                 }
                 
                 Spacer()
