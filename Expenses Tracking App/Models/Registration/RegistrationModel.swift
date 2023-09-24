@@ -9,6 +9,7 @@ import Foundation
 
 struct RegistrationModel {
     var email: String
+    var fullname: String
     var password: String
     var confirmPassword: String
 }

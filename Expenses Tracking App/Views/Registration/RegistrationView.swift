@@ -28,6 +28,10 @@ struct RegistrationView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
                 
+                TextField("Full Name", text: $viewModel.fullname)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
                 SecureField("Password", text: $viewModel.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()

@@ -10,6 +10,7 @@ import SwiftUI
 
 class RegistrationViewModel: ObservableObject {
     @Published var email: String = ""
+    @Published var fullname: String = ""
     @Published var password: String = ""
     @Published var confirmPassword: String = ""
     
