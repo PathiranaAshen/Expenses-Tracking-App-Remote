@@ -49,6 +49,15 @@
 		6F7A56A72AAE46A600A6EA83 /* ExpenseTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A56A62AAE46A600A6EA83 /* ExpenseTrackingView.swift */; };
 		6F7A56A82AAE46A600A6EA83 /* ExpenseTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A56A62AAE46A600A6EA83 /* ExpenseTrackingView.swift */; };
 		6F7A56A92AAE46A600A6EA83 /* ExpenseTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7A56A62AAE46A600A6EA83 /* ExpenseTrackingView.swift */; };
+		6F7AE5D52AC5BD6800C27889 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5D42AC5BD6800C27889 /* IncomeModel.swift */; };
+		6F7AE5D62AC5BD6800C27889 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5D42AC5BD6800C27889 /* IncomeModel.swift */; };
+		6F7AE5D72AC5BD6800C27889 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5D42AC5BD6800C27889 /* IncomeModel.swift */; };
+		6F7AE5DA2AC5BDC200C27889 /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5D92AC5BDC200C27889 /* IncomeView.swift */; };
+		6F7AE5DB2AC5BDC200C27889 /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5D92AC5BDC200C27889 /* IncomeView.swift */; };
+		6F7AE5DC2AC5BDC200C27889 /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5D92AC5BDC200C27889 /* IncomeView.swift */; };
+		6F7AE5DF2AC5BE1000C27889 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5DE2AC5BE1000C27889 /* IncomeViewModel.swift */; };
+		6F7AE5E02AC5BE1000C27889 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5DE2AC5BE1000C27889 /* IncomeViewModel.swift */; };
+		6F7AE5E12AC5BE1000C27889 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7AE5DE2AC5BE1000C27889 /* IncomeViewModel.swift */; };
 		6F92B2C62AAB593600828BC8 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F92B2C52AAB593600828BC8 /* RegistrationViewModel.swift */; };
 		6F92B2C72AAB593600828BC8 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F92B2C52AAB593600828BC8 /* RegistrationViewModel.swift */; };
 		6F92B2C82AAB593600828BC8 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F92B2C52AAB593600828BC8 /* RegistrationViewModel.swift */; };
@@ -120,6 +129,9 @@
 		6F7A569C2AAE44BB00A6EA83 /* ExpenseTrackingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackingModel.swift; sourceTree = "<group>"; };
 		6F7A56A12AAE45AB00A6EA83 /* ExpenseTrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackingViewModel.swift; sourceTree = "<group>"; };
 		6F7A56A62AAE46A600A6EA83 /* ExpenseTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackingView.swift; sourceTree = "<group>"; };
+		6F7AE5D42AC5BD6800C27889 /* IncomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeModel.swift; sourceTree = "<group>"; };
+		6F7AE5D92AC5BDC200C27889 /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
+		6F7AE5DE2AC5BE1000C27889 /* IncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewModel.swift; sourceTree = "<group>"; };
 		6F92B2C52AAB593600828BC8 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		6F92B2CA2AAB599600828BC8 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		6F92B2D32AAB5BBE00828BC8 /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
@@ -272,9 +284,34 @@
 			path = ExpenseTracking;
 			sourceTree = "<group>";
 		};
+		6F7AE5D32AC5BD4900C27889 /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				6F7AE5D42AC5BD6800C27889 /* IncomeModel.swift */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
+		6F7AE5D82AC5BDAE00C27889 /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				6F7AE5D92AC5BDC200C27889 /* IncomeView.swift */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
+		6F7AE5DD2AC5BDFC00C27889 /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				6F7AE5DE2AC5BE1000C27889 /* IncomeViewModel.swift */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
 		6F92B2C12AAB585200828BC8 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6F7AE5DD2AC5BDFC00C27889 /* Income */,
 				6FA5C6032ABDCFCD00F4E2DE /* Profile */,
 				6F027C042AB3687500335ADF /* Dashboard */,
 				6F027BF42AB3210900335ADF /* ReportsAnalytics */,
@@ -289,6 +326,7 @@
 		6F92B2C22AAB586000828BC8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6F7AE5D82AC5BDAE00C27889 /* Income */,
 				6FA5C6082ABDD16400F4E2DE /* Profile */,
 				6F027C0A2AB3694D00335ADF /* Sidebar */,
 				6F027C092AB3692C00335ADF /* Dashboard */,
@@ -304,6 +342,7 @@
 		6F92B2C32AAB586B00828BC8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6F7AE5D32AC5BD4900C27889 /* Income */,
 				6FA5C5FE2ABDCE7500F4E2DE /* Profile */,
 				6F027BFE2AB367BB00335ADF /* Dashboard */,
 				6F027BEF2AB3207200335ADF /* ReportsAnalytics */,
@@ -590,17 +629,20 @@
 				6F027BF62AB3213100335ADF /* ReportsAnalyticsViewModel.swift in Sources */,
 				6F7A56A72AAE46A600A6EA83 /* ExpenseTrackingView.swift in Sources */,
 				6F027C142AB36BCC00335ADF /* DashboardCard.swift in Sources */,
+				6F7AE5DA2AC5BDC200C27889 /* IncomeView.swift in Sources */,
 				6F027C062AB3689A00335ADF /* DashboardViewModel.swift in Sources */,
 				6FA5C60A2ABDD18000F4E2DE /* ProfileView.swift in Sources */,
 				6FA5C6052ABDCFF100F4E2DE /* ProfileViewModel.swift in Sources */,
 				6FBF31442AB0E0AA00C6EEAE /* BudgetingView.swift in Sources */,
 				6FA5C6002ABDCE9600F4E2DE /* ProfileModel.swift in Sources */,
 				6F027BFB2AB3221A00335ADF /* ReportsAnalyticsView.swift in Sources */,
+				6F7AE5DF2AC5BE1000C27889 /* IncomeViewModel.swift in Sources */,
 				6F92B2D42AAB5BBE00828BC8 /* RegistrationModel.swift in Sources */,
 				6F7A56972AAE2F4E00A6EA83 /* LoginView.swift in Sources */,
 				6F027C102AB36A1200335ADF /* DashboardView.swift in Sources */,
 				6F7A56922AAE2EB200A6EA83 /* LoginViewModel.swift in Sources */,
 				6F7A56A22AAE45AB00A6EA83 /* ExpenseTrackingViewModel.swift in Sources */,
+				6F7AE5D52AC5BD6800C27889 /* IncomeModel.swift in Sources */,
 				6F027BF12AB320B300335ADF /* ReportsAnalyticsModel.swift in Sources */,
 				6F7A569D2AAE44BB00A6EA83 /* ExpenseTrackingModel.swift in Sources */,
 			);
@@ -613,6 +655,7 @@
 				6F027C152AB36BCC00335ADF /* DashboardCard.swift in Sources */,
 				6FBF31402AB0DF9300C6EEAE /* BudgetingViewModel.swift in Sources */,
 				6F7A568E2AAE2E1D00A6EA83 /* LoginModel.swift in Sources */,
+				6F7AE5E02AC5BE1000C27889 /* IncomeViewModel.swift in Sources */,
 				6F7A569E2AAE44BB00A6EA83 /* ExpenseTrackingModel.swift in Sources */,
 				6FBF31452AB0E0AA00C6EEAE /* BudgetingView.swift in Sources */,
 				6F027C072AB3689A00335ADF /* DashboardViewModel.swift in Sources */,
@@ -620,6 +663,7 @@
 				6FA5C60B2ABDD18000F4E2DE /* ProfileView.swift in Sources */,
 				6F027BFC2AB3221A00335ADF /* ReportsAnalyticsView.swift in Sources */,
 				6F7A56982AAE2F4E00A6EA83 /* LoginView.swift in Sources */,
+				6F7AE5DB2AC5BDC200C27889 /* IncomeView.swift in Sources */,
 				6F92B2CC2AAB599600828BC8 /* RegistrationView.swift in Sources */,
 				6FBF313B2AB0DEF100C6EEAE /* BudgetingModel.swift in Sources */,
 				6F7A56932AAE2EB200A6EA83 /* LoginViewModel.swift in Sources */,
@@ -634,6 +678,7 @@
 				6FA5C6012ABDCE9600F4E2DE /* ProfileModel.swift in Sources */,
 				6F027C0D2AB3697200335ADF /* SidebarView.swift in Sources */,
 				6F7A56A32AAE45AB00A6EA83 /* ExpenseTrackingViewModel.swift in Sources */,
+				6F7AE5D62AC5BD6800C27889 /* IncomeModel.swift in Sources */,
 				6F92B2C72AAB593600828BC8 /* RegistrationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,17 +700,20 @@
 				6F027BF82AB3213100335ADF /* ReportsAnalyticsViewModel.swift in Sources */,
 				6F7A56A92AAE46A600A6EA83 /* ExpenseTrackingView.swift in Sources */,
 				6F027C162AB36BCC00335ADF /* DashboardCard.swift in Sources */,
+				6F7AE5DC2AC5BDC200C27889 /* IncomeView.swift in Sources */,
 				6F027C082AB3689A00335ADF /* DashboardViewModel.swift in Sources */,
 				6FA5C60C2ABDD18000F4E2DE /* ProfileView.swift in Sources */,
 				6FA5C6072ABDCFF100F4E2DE /* ProfileViewModel.swift in Sources */,
 				6FBF31462AB0E0AA00C6EEAE /* BudgetingView.swift in Sources */,
 				6FA5C6022ABDCE9600F4E2DE /* ProfileModel.swift in Sources */,
 				6F027BFD2AB3221A00335ADF /* ReportsAnalyticsView.swift in Sources */,
+				6F7AE5E12AC5BE1000C27889 /* IncomeViewModel.swift in Sources */,
 				6F92B2D62AAB5BBE00828BC8 /* RegistrationModel.swift in Sources */,
 				6F7A56992AAE2F4E00A6EA83 /* LoginView.swift in Sources */,
 				6F027C122AB36A1200335ADF /* DashboardView.swift in Sources */,
 				6F7A56942AAE2EB200A6EA83 /* LoginViewModel.swift in Sources */,
 				6F7A56A42AAE45AB00A6EA83 /* ExpenseTrackingViewModel.swift in Sources */,
+				6F7AE5D72AC5BD6800C27889 /* IncomeModel.swift in Sources */,
 				6F027BF32AB320B300335ADF /* ReportsAnalyticsModel.swift in Sources */,
 				6F7A569F2AAE44BB00A6EA83 /* ExpenseTrackingModel.swift in Sources */,
 			);
