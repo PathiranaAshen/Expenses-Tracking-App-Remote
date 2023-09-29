@@ -46,7 +46,7 @@ struct ContentView: View {
                         Button("Join") {
                             isLoginViewPresented.toggle()
                         }
-                        .frame(maxWidth: 100)
+                        .frame(maxWidth: 260)
                         .padding()
                         .font(.title3)
                         .foregroundColor(.white)
