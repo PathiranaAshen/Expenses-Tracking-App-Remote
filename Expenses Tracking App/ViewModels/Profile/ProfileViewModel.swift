@@ -6,14 +6,40 @@
 //
 
 import Foundation
-import Combine
+import Firebase
+import FirebaseFirestore
+import FirebaseFirestoreSwift
 
 class ProfileViewModel: ObservableObject {
-    @Published var user: UserProfile
-    
-    init(user: UserProfile) {
-        self.user = user
+    @Published var name: String = ""
+    @Published var email: String = ""
+
+    private var db = Firestore.firestore()
+    private var userCollectionRef: CollectionReference
+
+    init() {
+        self.userCollectionRef = db.collection("User")
+
+        // Fetch user data from Firestore
+        fetchUserData()
     }
-    
-    // Add functions to update the user's profile information as needed
+
+    private func fetchUserData() {
+        if let userEmail = Auth.auth().currentUser?.email {
+            userCollectionRef.whereField("email", isEqualTo: userEmail)
+                .getDocuments { [weak self] (querySnapshot, error) in
+                    if let error = error {
+                        print("Error fetching user data: \(error.localizedDescription)")
+                        return
+                    }
+
+                    if let document = querySnapshot?.documents.first {
+                        let data = document.data()
+                        self?.name = data["fullname"] as? String ?? ""
+                        self?.email = data["email"] as? String ?? ""
+                    }
+                }
+        }
+    }
 }
+

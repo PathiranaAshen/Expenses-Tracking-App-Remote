@@ -34,6 +34,11 @@ struct SidebarView: View {
             })
             .padding()*/
             
+            NavigationLink(destination: ProfileView(viewModel: ProfileViewModel(), isSidebarOpen: $isSidebarOpen), label: {
+                Text("Profile")
+            })
+            .padding()
+            
             NavigationLink(destination: ExpenseTrackingView(viewModel: ExpenseTrackingViewModel())) {
                 Text("Expense Tracking")
             }

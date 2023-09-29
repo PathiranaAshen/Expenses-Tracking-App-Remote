@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct UserProfile {
+struct UserProfile: Codable, Identifiable {
     var id: String
     var name: String
     var email: String
