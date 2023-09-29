@@ -5,7 +5,7 @@
 //  Created by Ashen Pathirana on 2023-09-14.
 //
 
-import Foundation
+/*import Foundation
 
 struct DashboardModel {
     var income: Double
@@ -16,6 +16,20 @@ struct DashboardModel {
         income - expenses
     }
     
+    var savingsPercentage: Double {
+        (savings / income) * 100
+    }
+}*/
+
+import Foundation
+
+struct DashboardModel {
+    var income: Double = 0.0
+    var expenses: Double = 0.0
+    var budget: Double = 0.0
+    var savings: Double {
+        return income - expenses
+    }
     var savingsPercentage: Double {
         (savings / income) * 100
     }
