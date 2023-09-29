@@ -6,17 +6,19 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct Expenses_Tracking_AppApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+        print("Firebase Configured.")
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-            //LoginView(viewModel: LoginViewModel())
-            //DashboardView(viewModel: DashboardViewModel())
-            //ExpenseTrackingView(viewModel:  ExpenseTrackingViewModel())
-            //BudgetingView(viewModel: BudgetingViewModel())
-            //ReportsAndAnalyticsView(viewModel:  ReportsAndAnalyticsViewModel())
         }
     }
 }
