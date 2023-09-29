@@ -7,14 +7,12 @@
 
 import Foundation
 
-struct ExpenseReport: Identifiable {
-    var id = UUID()
-    var category: String
-    var amountSpent: Double
+struct ExpenseReport: Hashable {
+    let category: String
+    let amountSpent: Double
 }
 
-struct IncomeReport: Identifiable {
-    var id = UUID()
-    var source: String
-    var amountEarned: Double
+struct IncomeReport: Hashable {
+    let source: String
+    let amountEarned: Double
 }
