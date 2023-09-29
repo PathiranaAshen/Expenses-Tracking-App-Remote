@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-//import Firebase
+import Firebase
 
 class IncomeViewModel: ObservableObject {
     @Published var income = ""
@@ -16,7 +16,7 @@ class IncomeViewModel: ObservableObject {
     @Published var showAlert = false
     @Published var alertMessage = ""
     
-    /*func addIncome() {
+    func addIncome() {
         // Ensure there's a current user
         guard let currentUser = Auth.auth().currentUser else {
             self.alertMessage = "User not authenticated"
@@ -28,7 +28,7 @@ class IncomeViewModel: ObservableObject {
         let uid = currentUser.uid
         let email = currentUser.email ?? ""
 
-        // Create a dictionary with the data you want to insert (excluding the ID)
+        // Create a dictionary with the data without the ID
         let data: [String: Any] = [
             "user_id": uid,
             "email": email,
@@ -63,7 +63,7 @@ class IncomeViewModel: ObservableObject {
             // Clearing the input fields after adding expenses
             self.clearFields()
         }
-    }*/
+    }
     
     func clearFields() {
         income = ""

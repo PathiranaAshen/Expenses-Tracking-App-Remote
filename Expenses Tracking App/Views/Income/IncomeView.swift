@@ -25,9 +25,9 @@ struct IncomeView: View {
                 
                 VStack(spacing: 10) { // Used HStack for equal button widths
                     Button("Add Income") {
-                        //viewModel.addIncome()
+                        viewModel.addIncome()
                     }
-                    .frame(maxWidth: 316) // Ensure equal button widths
+                    .frame(maxWidth: 326) // Ensure equal button widths
                     .frame(maxHeight: 20)
                     .padding()
                     .font(.headline)
@@ -39,7 +39,7 @@ struct IncomeView: View {
                     Button("Clear") {
                         viewModel.clearFields()
                     }
-                    .frame(maxWidth: 316) // Ensure equal button widths
+                    .frame(maxWidth: 326) // Ensure equal button widths
                     .padding()
                     .font(.headline)
                     .foregroundColor(.white)
@@ -70,3 +70,4 @@ struct IncomeView_Previews: PreviewProvider {
         IncomeView(viewModel: IncomeViewModel())
     }
 }
+

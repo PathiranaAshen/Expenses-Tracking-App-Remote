@@ -7,22 +7,18 @@
 
 import Foundation
 import SwiftUI
+import FirebaseAuth
 
 struct SidebarView: View {
     @Binding var isSidebarOpen: Bool
     @Environment(\.dismiss) var dismiss
     @State private var isLoggedOut = false
+    @State private var navigateToContentView = false
+    
+    //@ObservedObject var profileViewModel = ProfileViewModel()
 
     var body: some View {
         VStack(alignment: .leading) {
-            
-            /*Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-                .padding()
-                .alignmentGuide(.trailing) { _ in
-                    return -10
-                }*/
             
             Image("appicon4")
                 .resizable()
@@ -33,10 +29,10 @@ struct SidebarView: View {
                 .blendMode(.color)
 
             // Add buttons for navigation
-            NavigationLink(destination: ProfileView(viewModel: ProfileViewModel(user: UserProfile(id: "1", name: "Ashen Pathirana", email: "ashen@example.com")), isSidebarOpen: $isSidebarOpen), label: {
+            /*NavigationLink(destination: ProfileView(viewModel: profileViewModel, isSidebarOpen: $isSidebarOpen), label: {
                 Text("Profile")
             })
-            .padding()
+            .padding()*/
             
             NavigationLink(destination: ExpenseTrackingView(viewModel: ExpenseTrackingViewModel())) {
                 Text("Expense Tracking")
@@ -47,6 +43,11 @@ struct SidebarView: View {
                 Text("Budgeting")
             }
             .padding()
+            
+            NavigationLink(destination: IncomeView(viewModel: IncomeViewModel())) {
+                Text("Income")
+            }
+            .padding()
 
             NavigationLink(destination: ReportsAndAnalyticsView(viewModel: ReportsAndAnalyticsViewModel())) {
                 Text("Reports and Analytics")
@@ -54,9 +55,14 @@ struct SidebarView: View {
             .padding()
 
             Button(action: {
-                // Implement Log Out functionality here
-                isSidebarOpen = false
-                isLoggedOut = true
+                do {
+                    try Auth.auth().signOut()
+                    isSidebarOpen = false
+                    isLoggedOut = true
+                }
+                catch {
+                    print("Logout error: \(error.localizedDescription)")
+                }
             }) {
                 Text("Log Out")
             }
@@ -67,10 +73,14 @@ struct SidebarView: View {
                       message:  Text("Are you sure you want to log out?"),
                       primaryButton: .default(Text("Yes")) {
                         dismiss()
+                        self.navigateToContentView = true
                     // Implement Navigation to the Login Screen
                       },
                       secondaryButton: .cancel()
                 )
+            }
+            NavigationLink(destination: ContentView(), isActive: $navigateToContentView) {
+                EmptyView()
             }
             
             Spacer()
