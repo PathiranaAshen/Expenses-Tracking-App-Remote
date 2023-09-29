@@ -91,9 +91,6 @@
 		6FBF31442AB0E0AA00C6EEAE /* BudgetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF31432AB0E0AA00C6EEAE /* BudgetingView.swift */; };
 		6FBF31452AB0E0AA00C6EEAE /* BudgetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF31432AB0E0AA00C6EEAE /* BudgetingView.swift */; };
 		6FBF31462AB0E0AA00C6EEAE /* BudgetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF31432AB0E0AA00C6EEAE /* BudgetingView.swift */; };
-		6FBF31482AB0E13200C6EEAE /* BudgetCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF31472AB0E13200C6EEAE /* BudgetCategoryRow.swift */; };
-		6FBF31492AB0E13200C6EEAE /* BudgetCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF31472AB0E13200C6EEAE /* BudgetCategoryRow.swift */; };
-		6FBF314A2AB0E13200C6EEAE /* BudgetCategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBF31472AB0E13200C6EEAE /* BudgetCategoryRow.swift */; };
 		6FD1FF772AA3618B009DDBF8 /* Expenses_Tracking_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1FF762AA3618B009DDBF8 /* Expenses_Tracking_AppApp.swift */; };
 		6FD1FF792AA3618B009DDBF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD1FF782AA3618B009DDBF8 /* ContentView.swift */; };
 		6FD1FF7B2AA3618D009DDBF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD1FF7A2AA3618D009DDBF8 /* Assets.xcassets */; };
@@ -148,7 +145,6 @@
 		6FBF31392AB0DEF100C6EEAE /* BudgetingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetingModel.swift; sourceTree = "<group>"; };
 		6FBF313E2AB0DF9300C6EEAE /* BudgetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetingViewModel.swift; sourceTree = "<group>"; };
 		6FBF31432AB0E0AA00C6EEAE /* BudgetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetingView.swift; sourceTree = "<group>"; };
-		6FBF31472AB0E13200C6EEAE /* BudgetCategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCategoryRow.swift; sourceTree = "<group>"; };
 		6FD1FF732AA3618B009DDBF8 /* Expenses Tracking App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Expenses Tracking App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD1FF762AA3618B009DDBF8 /* Expenses_Tracking_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses_Tracking_AppApp.swift; sourceTree = "<group>"; };
 		6FD1FF782AA3618B009DDBF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -434,7 +430,6 @@
 			isa = PBXGroup;
 			children = (
 				6FBF31432AB0E0AA00C6EEAE /* BudgetingView.swift */,
-				6FBF31472AB0E13200C6EEAE /* BudgetCategoryRow.swift */,
 			);
 			path = Budgeting;
 			sourceTree = "<group>";
@@ -647,7 +642,6 @@
 				6F92B2C62AAB593600828BC8 /* RegistrationViewModel.swift in Sources */,
 				6FD1FF772AA3618B009DDBF8 /* Expenses_Tracking_AppApp.swift in Sources */,
 				6FBF313F2AB0DF9300C6EEAE /* BudgetingViewModel.swift in Sources */,
-				6FBF31482AB0E13200C6EEAE /* BudgetCategoryRow.swift in Sources */,
 				6F92B2CB2AAB599600828BC8 /* RegistrationView.swift in Sources */,
 				6FBF313A2AB0DEF100C6EEAE /* BudgetingModel.swift in Sources */,
 				6F027BF62AB3213100335ADF /* ReportsAnalyticsViewModel.swift in Sources */,
@@ -694,7 +688,6 @@
 				6F027C112AB36A1200335ADF /* DashboardView.swift in Sources */,
 				6FD1FF882AA3618D009DDBF8 /* Expenses_Tracking_AppTests.swift in Sources */,
 				6F027C012AB367D800335ADF /* DashboardModel.swift in Sources */,
-				6FBF31492AB0E13200C6EEAE /* BudgetCategoryRow.swift in Sources */,
 				6F7A56A82AAE46A600A6EA83 /* ExpenseTrackingView.swift in Sources */,
 				6F027BF22AB320B300335ADF /* ReportsAnalyticsModel.swift in Sources */,
 				6F92B2D52AAB5BBE00828BC8 /* RegistrationModel.swift in Sources */,
@@ -718,7 +711,6 @@
 				6F92B2C82AAB593600828BC8 /* RegistrationViewModel.swift in Sources */,
 				6FD1FF922AA3618D009DDBF8 /* Expenses_Tracking_AppUITests.swift in Sources */,
 				6FBF31412AB0DF9300C6EEAE /* BudgetingViewModel.swift in Sources */,
-				6FBF314A2AB0E13200C6EEAE /* BudgetCategoryRow.swift in Sources */,
 				6F92B2CD2AAB599600828BC8 /* RegistrationView.swift in Sources */,
 				6FBF313C2AB0DEF100C6EEAE /* BudgetingModel.swift in Sources */,
 				6F027BF82AB3213100335ADF /* ReportsAnalyticsViewModel.swift in Sources */,

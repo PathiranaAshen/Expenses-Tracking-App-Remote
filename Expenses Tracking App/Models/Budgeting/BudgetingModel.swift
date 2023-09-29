@@ -6,22 +6,10 @@
 //
 
 import Foundation
-import SwiftUI
 
-class Category: Identifiable, ObservableObject {
-    var id = UUID()
-    var name: String
-    @Published var budgetAmount: Double
-    var period: BudgetPeriod
-
-    init(name: String, budgetAmount: Double, period: BudgetPeriod) {
-        self.name = name
-        self.budgetAmount = budgetAmount
-        self.period = period
-    }
+struct BudgetingModel {
+    var category: String
+    var budgetAmount: Double
+    var period: String
 }
 
-enum BudgetPeriod {
-    case weekly
-    case monthly
-}
