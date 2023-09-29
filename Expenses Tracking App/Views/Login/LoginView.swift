@@ -28,32 +28,41 @@ struct LoginView: View {
                 TextField("Email", text: $viewModel.email)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                    .autocapitalization(.none)
                 
                 SecureField("Password", text: $viewModel.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                    .autocapitalization(.none)
                 
                 VStack(spacing: 30) { // Used a VStack for equal button widths
                     Button("Log in") {
                         viewModel.loginUser()
                     }
-                    .frame(maxWidth: 100) // Ensure equal button widths
+                    .frame(maxWidth: 326) // Ensure equal button widths
                     .padding()
                     .font(.headline)
                     .foregroundColor(.white)
                     .background(Color.blue)
                     .cornerRadius(10)
                     .fontWeight(.heavy)
+                    .alert(isPresented: $viewModel.showAlert) {
+                        Alert(title: Text("Login"), message: Text(viewModel.alertMessage), dismissButton: .default(Text("Ok")))
+                    }
+                    
+                    NavigationLink(destination: DashboardView(viewModel: DashboardViewModel()), isActive: $viewModel.isNavigationActive) {
+                        EmptyView()
+                    }
+                    .hidden()
                     
                     Text("Don't have an account, Sign Up below")
                         .font(.subheadline)
                         .padding()
                         
-                    
                     Button("Register") {
                         isRegistrationViewPresented.toggle()
                     }
-                    .frame(maxWidth: 100) // Ensure equal button widths
+                    .frame(maxWidth: 326) // Ensure equal button widths
                     .padding()
                     .font(.headline)
                     .foregroundColor(.white)
