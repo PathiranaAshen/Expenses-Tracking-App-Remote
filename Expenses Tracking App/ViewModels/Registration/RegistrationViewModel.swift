@@ -10,10 +10,6 @@ import SwiftUI
 import FirebaseAuth
 import FirebaseFirestore
 
-/*protocol AuthenticationFormProtocol {
-    var formIsValid: Bool { get }
-}*/
-
 class RegistrationViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var fullname: String = ""
