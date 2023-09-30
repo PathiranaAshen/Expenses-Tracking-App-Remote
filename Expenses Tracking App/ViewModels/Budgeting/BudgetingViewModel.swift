@@ -64,7 +64,7 @@ class BudgetingViewModel: ObservableObject {
                     }
                     else {
                         print("Document updated with ID: \(docID)")
-                        self.alertMessage = "Expense Added..."
+                        self.alertMessage = "Category Added..."
                         self.showAlert = true
                     }
                 }
